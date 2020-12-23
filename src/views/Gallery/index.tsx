@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 
-import { List } from 'antd';
-
 import { GalleryContext } from 'contexts';
 
 import GalleryItem from './GalleryItem';

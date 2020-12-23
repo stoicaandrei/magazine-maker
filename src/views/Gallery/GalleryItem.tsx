@@ -9,7 +9,7 @@ type Props = {
 const GalleryItem: React.FC<Props> = ({ item }) => {
   return (
     <div className="magazine-container">
-      <a href={`/${item.id}`} target="_blank">
+      <a href={`/magazine/${item.id}`} target="_blank">
         <div
           className="cover"
           style={{ background: `url(${item.thumbnailUrl})`, backgroundSize: 'cover' }}

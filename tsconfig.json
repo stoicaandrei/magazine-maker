@@ -22,6 +22,8 @@
       "hooks": ["src/utils"],
       "components": ["src/components"],
       "reusable": ["src/reusable"],
+      "types": ["src/types"],
+      "views": ["src/views"],
       "assets/*": ["src/assets/*"]
     }
   },

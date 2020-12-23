@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { GalleryProvider } from 'contexts';
+
 import 'antd/dist/antd.css';
 
 ReactDOM.render(
-  <App/>,
+  <GalleryProvider>
+    <App />
+  </GalleryProvider>,
   document.getElementById('root')
 );
 

@@ -1,11 +1,15 @@
 import React from 'react';
 
+import { LoadingWrapper } from 'reusable';
+
 import Routes from './Routes';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Routes />
+      <LoadingWrapper>
+        <Routes />
+      </LoadingWrapper>
     </div>
   );
 };

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "firebase_config": ["src/firebase_config"],
+      "contexts": ["src/contexts"],
+      "hooks": ["src/utils"],
+      "components": ["src/components"],
+      "reusable": ["src/reusable"],
+      "assets/*": ["src/assets/*"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Gallery } from 'views';
+import Routes from './Routes';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Gallery />
+      <Routes />
     </div>
   );
 };

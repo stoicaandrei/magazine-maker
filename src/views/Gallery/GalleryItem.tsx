@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { MagazinePreview } from 'types';
+import { Magazine } from 'types';
 
 type Props = {
-  item: MagazinePreview;
+  item: Magazine;
 };
 
 const GalleryItem: React.FC<Props> = ({ item }) => {
   return (
     <div className="magazine-container">
-      <a href={`/magazine/${item.id}`} target="_blank">
+      <a href={`/magazine/${item.id}`} target="_blank" rel="noreferrer">
         <div
           className="cover"
           style={{ background: `url(${item.thumbnailUrl})`, backgroundSize: 'cover' }}

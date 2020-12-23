@@ -4,15 +4,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { GalleryProvider } from 'contexts';
+import { MagazineProvider } from 'contexts';
 
 import 'antd/dist/antd.css';
 import './styles/style.scss'
 
 ReactDOM.render(
-  <GalleryProvider>
+  <MagazineProvider>
     <App />
-  </GalleryProvider>,
+  </MagazineProvider>,
   document.getElementById('root')
 );
 

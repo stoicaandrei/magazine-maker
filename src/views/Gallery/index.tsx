@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 
-import { GalleryContext } from 'contexts';
+import { MagazineContext } from 'contexts';
 
 import GalleryItem from './GalleryItem';
 
 const Gallery: React.FC = () => {
-  const { gallery } = useContext(GalleryContext);
+  const { magazines } = useContext(MagazineContext);
 
-  return <div className="gallery-container">{gallery.map((item) => GalleryItem({ item }))}</div>;
+  return <div className="gallery-container">{magazines.map((item) => GalleryItem({ item }))}</div>;
 };
 
 export default Gallery;

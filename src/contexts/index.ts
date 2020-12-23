@@ -1,1 +1,1 @@
-export * from './GalleryContext';
+export * from './MagazineContext';

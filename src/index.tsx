@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { GalleryProvider } from 'contexts';
 
 import 'antd/dist/antd.css';
+import './styles/style.scss'
 
 ReactDOM.render(
   <GalleryProvider>

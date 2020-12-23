@@ -1,0 +1,37 @@
+.gallery-container {
+
+  .magazine-container {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: hsla(0, 0, 0, 0.2) 0 4px 2px -2px;
+    font-family: 'adelle-sans', sans-serif;
+    font-weight: 100;
+    margin: 48px auto;
+    width: 20rem;
+
+    .cover {
+      border-radius: 5px 5px 0 0;
+      height: 30rem;
+      box-shadow: inset hsla(0, 0, 0, 0.2) 0 64px 64px 16px;
+    }
+
+    .body {
+      margin: 0 auto;
+      width: 80%;
+
+      .title {
+        color: #333;
+        font-weight: 100;
+      }
+    }
+  }
+  @media screen and (min-width: 480px) {
+    .magazine-container { width: 28rem; }
+  }
+  @media screen and (min-width: 767px) {
+    .magazine-container { width: 40rem; }
+  }
+  @media screen and (min-width: 959px) {
+    .magazine-container { width: 50rem; }
+  }
+}

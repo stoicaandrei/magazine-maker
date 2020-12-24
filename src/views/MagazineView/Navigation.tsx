@@ -6,13 +6,18 @@ import Prev from 'assets/images/prev_white.png';
 import Next from 'assets/images/next_white.png';
 
 const Navigation: React.FC = () => {
-  const { goToNextPage, goToPrevPage } = useContext(MagazineContext);
+  const { goToNextPage, goToPrevPage, isFirstPage, isLastPage } = useContext(MagazineContext);
+
+  let prevClass = 'btn btn-prev ';
+  if (isFirstPage) prevClass += 'hidden';
+
+  let nextClass = 'btn btn-next ';
+  if (isLastPage) nextClass += 'hidden';
 
   return (
     <div className="navigation-container">
-      {/*<img className="btn btn-prev hidden" src={Prev} alt="prev" />*/}
-      <img onClick={goToPrevPage} className="btn btn-prev" src={Prev} alt="prev" />
-      <img onClick={goToNextPage} className="btn btn-next" src={Next} alt="next" />
+      <img onClick={goToPrevPage} className={prevClass} src={Prev} alt="prev" />
+      <img onClick={goToNextPage} className={nextClass} src={Next} alt="next" />
     </div>
   );
 };

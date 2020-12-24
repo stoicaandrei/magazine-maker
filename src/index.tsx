@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,12 +8,14 @@ import reportWebVitals from './reportWebVitals';
 import { MagazineProvider } from 'contexts';
 
 import 'antd/dist/antd.css';
-import './styles/style.scss'
+import './styles/style.scss';
 
 ReactDOM.render(
-  <MagazineProvider>
-    <App />
-  </MagazineProvider>,
+  <BrowserRouter>
+    <MagazineProvider>
+      <App />
+    </MagazineProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

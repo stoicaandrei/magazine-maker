@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import { Gallery, MagazineView } from 'views';
 
 const Routes: React.FC = () => {
-  const content = (
+  return (
     <Switch>
       <Route exact path="/">
         <Gallery />
@@ -15,8 +15,6 @@ const Routes: React.FC = () => {
       <Redirect to="/" />
     </Switch>
   );
-
-  return <BrowserRouter>{content}</BrowserRouter>;
 };
 
 export default Routes;

@@ -34,7 +34,7 @@ export const MagazineProvider: React.FC = ({ children }) => {
   const selectMagazine = (id: string) => setSelectedId(id);
 
   const query = useQuery();
-  const lastPage = currentMagazine?.pageUrls.length || 0;
+  const lastPage = (currentMagazine?.pageUrls.length || 1) - 1;
 
   let currentPage = parseInt(query.page) || 0;
   if (currentPage < 0) currentPage = 0;

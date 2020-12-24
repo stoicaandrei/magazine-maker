@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   padding: 1rem;
-  row-gap: 3rem;
+  row-gap: 1rem;
 
   .page {
     width: 100%;
@@ -44,6 +45,12 @@
       position: static;
       transform: initial;
       width: 60%;
+    }
+  }
+
+  .page-selector-container {
+    .page-input {
+      width: 30px;
     }
   }
 

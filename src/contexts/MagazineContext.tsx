@@ -17,6 +17,7 @@ type ContextProps = {
   currentPage: number;
   goToNextPage: () => void;
   goToPrevPage: () => void;
+  jumpToPage: (page: number) => void;
   isFirstPage: boolean;
   isLastPage: boolean;
 };
@@ -49,6 +50,7 @@ export const MagazineProvider: React.FC = ({ children }) => {
   };
   const goToNextPage = () => changePage(currentPage + 1);
   const goToPrevPage = () => changePage(currentPage - 1);
+  const jumpToPage = (page: number) => changePage(page);
 
   const isFirstPage = currentPage === 0;
   const isLastPage = currentPage === lastPage;
@@ -64,6 +66,7 @@ export const MagazineProvider: React.FC = ({ children }) => {
         currentPage,
         goToNextPage,
         goToPrevPage,
+        jumpToPage,
         isFirstPage,
         isLastPage,
       }}

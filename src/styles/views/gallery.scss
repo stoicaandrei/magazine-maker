@@ -1,6 +1,6 @@
 .gallery-container {
 
-  .magazine-container {
+  .magazine-preview-container {
     background: #fff;
     border-radius: 5px;
     box-shadow: hsla(0, 0, 0, 0.2) 0 4px 2px -2px;
@@ -26,12 +26,12 @@
     }
   }
   @media screen and (min-width: 480px) {
-    .magazine-container { width: 28rem; }
+    .magazine-preview-container { width: 28rem; }
   }
   @media screen and (min-width: 767px) {
-    .magazine-container { width: 40rem; }
+    .magazine-preview-container { width: 40rem; }
   }
   @media screen and (min-width: 959px) {
-    .magazine-container { width: 50rem; }
+    .magazine-preview-container { width: 50rem; }
   }
 }

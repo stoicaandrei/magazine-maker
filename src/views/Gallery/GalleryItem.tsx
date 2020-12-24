@@ -11,7 +11,7 @@ const GalleryItem: React.FC<Props> = ({ item }) => {
   const magazineLink = `/magazine/${item.id}?page=0`;
 
   return (
-    <div className="magazine-container">
+    <div className="magazine-preview-container">
       <a href={magazineLink} target="_blank" rel="noreferrer">
         <div className="cover" style={backgroundStyle} />
         <div className="body">

@@ -19,7 +19,7 @@
     "paths": {
       "firebase_config": ["src/firebase_config"],
       "contexts": ["src/contexts"],
-      "hooks": ["src/utils"],
+      "hooks": ["src/hooks"],
       "components": ["src/components"],
       "reusable": ["src/reusable"],
       "types": ["src/types"],

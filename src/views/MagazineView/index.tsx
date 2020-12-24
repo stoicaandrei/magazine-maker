@@ -9,7 +9,20 @@ const MagazineView: React.FC = () => {
 
   useEffect(() => selectMagazine(magazineId), [magazineId]);
 
-  return <p>{JSON.stringify(currentMagazine || {})}</p>;
+  if (!currentMagazine) return <p>magazine not found :(</p>;
+
+  console.log(currentMagazine);
+
+  const backgroundStyle = {
+    backgroundImage: `url(${currentMagazine.backgroundUrl})`,
+    backgroundSize: 'cover',
+  };
+
+  return (
+    <div className="magazine-container" style={backgroundStyle}>
+      {currentMagazine.title}
+    </div>
+  );
 };
 
 export default MagazineView;

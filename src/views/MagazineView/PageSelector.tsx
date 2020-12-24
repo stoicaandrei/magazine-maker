@@ -20,8 +20,8 @@ const PageSelector: React.FC = () => {
         onChange={(e) => {
           if (!e.target.value) return setInputPage('');
 
-          const page = parseInt(e.target.value) || undefined;
-          if (typeof page === 'undefined') return;
+          const page = parseInt(e.target.value);
+          if (Number.isNaN(page)) return;
 
           jumpToPage(page);
         }}

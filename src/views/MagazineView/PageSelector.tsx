@@ -5,10 +5,6 @@ import { MagazineContext } from 'contexts';
 const PageSelector: React.FC = () => {
   const { currentMagazine, currentPage, jumpToPage } = useContext(MagazineContext);
 
-  const [inputPage, setInputPage] = useState(0);
-
-  useEffect(() => setInputPage(currentPage), [setInputPage, currentPage]);
-
   const pageCount = currentMagazine?.pageUrls.length || 1;
   const lastPage = pageCount - 1;
 
@@ -17,12 +13,10 @@ const PageSelector: React.FC = () => {
       <input
         className="page-input"
         type="text"
-        value={inputPage}
+        value={currentPage}
         onChange={(e) => {
-          const page = parseInt(e.target.value);
-          setInputPage(page);
-
-          if (page) jumpToPage(page);
+          const page = parseInt(e.target.value) || 0;
+          jumpToPage(page);
         }}
       />
       {` / ${lastPage}`}

@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { Image, Spin } from 'antd';
+
 import { MagazineContext } from 'contexts';
 
 import Navigation from './Navigation';
@@ -18,9 +20,11 @@ const MagazineView: React.FC = () => {
     backgroundSize: 'cover',
   };
 
+  const pageUrl = currentMagazine.pageUrls[currentPage];
+
   return (
     <div className="magazine-container" style={backgroundStyle}>
-      <img className="page" src={currentMagazine.pageUrls[currentPage]} alt="page" />
+      <Image preview={false} className="page" src={pageUrl} alt="page" placeholder={<Spin />} />
       <Navigation />
     </div>
   );

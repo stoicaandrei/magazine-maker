@@ -11,7 +11,7 @@ const MagazineView: React.FC = () => {
   const { magazineId } = useParams() as { magazineId: string };
   const { currentMagazine, currentPage, selectMagazine } = useContext(MagazineContext);
 
-  useEffect(() => selectMagazine(magazineId), [magazineId]);
+  useEffect(() => selectMagazine(magazineId), [magazineId, selectMagazine]);
 
   if (!currentMagazine) return <p>magazine not found :(</p>;
 

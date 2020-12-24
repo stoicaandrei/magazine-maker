@@ -7,11 +7,11 @@
     font-family: 'adelle-sans', sans-serif;
     font-weight: 100;
     margin: 48px auto;
-    width: 20rem;
+    width: 30rem;
 
     .cover {
       border-radius: 5px 5px 0 0;
-      height: 30rem;
+      height: 60rem;
       box-shadow: inset hsla(0, 0, 0, 0.2) 0 64px 64px 16px;
     }
 
@@ -20,18 +20,21 @@
       width: 80%;
 
       .title {
-        color: #333;
+        color: #333 !important;
         font-weight: 100;
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
       }
     }
   }
   @media screen and (min-width: 480px) {
-    .magazine-preview-container { width: 28rem; }
+    .magazine-preview-container { width: 58rem; }
   }
   @media screen and (min-width: 767px) {
-    .magazine-preview-container { width: 40rem; }
+    .magazine-preview-container { width: 70rem; }
   }
   @media screen and (min-width: 959px) {
-    .magazine-preview-container { width: 50rem; }
+    .magazine-preview-container { width: 80rem; }
   }
 }

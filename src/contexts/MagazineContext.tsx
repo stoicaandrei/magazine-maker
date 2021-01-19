@@ -55,11 +55,13 @@ export const MagazineProvider: React.FC = ({ children }) => {
   const isFirstPage = currentPage === 0;
   const isLastPage = currentPage === lastPage;
 
+  const sortedMagazines = (magazines || []).sort((a, b) => (a.id < b.id ? 1 : -1));
+
   return (
     <MagazineContext.Provider
       value={{
         fetching,
-        magazines: magazines || [],
+        magazines: sortedMagazines,
         error,
         currentMagazine,
         selectMagazine,

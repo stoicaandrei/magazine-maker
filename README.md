@@ -82,7 +82,6 @@ It's purpose is to allow anyone who wishes to host an online magazine on their o
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * yarn
   ```sh
   npm install --global yarn
